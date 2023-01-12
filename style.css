@@ -3,6 +3,7 @@
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all: unset;
     display: revert;
+    transition: all .3s ease-out;
   }
 
   *,
@@ -13,7 +14,7 @@
 
 img {
     max-width: 100%;
-  }
+}
 
 body{
     font-family: 'Nunito', sans-serif;
@@ -34,4 +35,24 @@ header{
  font-size: 1.3rem;
  font-weight: bold;
  color: black;
+}
+
+.navbar{
+    background-color: rgb(255, 136, 136);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.navbar a{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    padding: .2rem 16rem;
+    background-color: red;
+    border-radius: .5rem;
+}
+
+.navbar a:hover{
+    color: white;
 }
