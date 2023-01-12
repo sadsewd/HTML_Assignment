@@ -44,18 +44,20 @@ header{
 }
 
 .navbar{
+    display: flex;
     width: 100%;
     background-color: rgb(255, 136, 136);
     padding-bottom: 1rem;
     padding-top: 1rem;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
+    justify-content: space-around;
 }
 
 .navbar a{
     font-size: 1.5rem;
     margin-left: 2rem;
-    padding: .2rem 16rem;
+    padding: .2rem 12rem;
     background-color: red;
     border-radius: .5rem;
 }
@@ -110,6 +112,7 @@ aside a{
     background-color: rgb(255, 190, 190);
     border: solid 2px red;
     margin-bottom: 1.5rem;
+    margin-right: 2rem;
 }
 
 .listContainer h2, .imgContainer h2{
@@ -137,3 +140,38 @@ ul{
     justify-content: center;
 }
 
+.about{
+    background-color: rgb(255, 190, 190);
+    border: solid 2px red;
+    width: 70%;
+    float: right;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about article h1{
+    font-size: 1.5rem;
+}
+
+.about article h1, .about section h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about article{
+    margin: 0;
+}
+
+.about article, .about section{
+    width: 100%;
+    padding: 1rem;
+}
+
+.about article p, .about section p{
+    font-size: 1.2rem;
+    text-align: center;
+}
