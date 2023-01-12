@@ -91,9 +91,20 @@ header{
     border-radius: .5rem;
 }
 
-/*used hover to give some feedback upon putting your mouse on the button*/
-.navbar a:hover{
+/*styling for the active page button*/
+.navbar #active{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    padding: .2rem 12rem;
+    background-color: darkred;
+    border-radius: .5rem;
     color: white;
+}
+
+/*used hover to give some feedback upon putting your mouse on the button*/
+.navbar a:hover:not(#active){
+    color: white;
+    background-color: darkred;
 }
 
 /*used flex to center the items and used positon fixed to lock the footer on the screen to which i added bottom 0 to place it on the bottom of the screen as the footer should be*/
@@ -113,6 +124,7 @@ footer a{
 
 a:hover{
     color: white;
+    text-decoration: none;
 }
 
 /*used float right since i put aside on the left of the screen*/
@@ -122,7 +134,6 @@ article{
     width: 75%;
     margin-bottom: 2rem;
 }
-
 
 aside{
     display: flex;
@@ -136,9 +147,11 @@ aside{
     min-height: 17rem;
 }
 
+/*added underline to the text so the user can more easily understand that those are links*/
 aside a{
     font-size: 1.3rem;
     margin-top: 2rem;
+    text-decoration: underline;
 }
 
 .listContainer, .imgContainer{
