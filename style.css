@@ -86,6 +86,7 @@ article{
     margin-top: 2rem;
     float: right;
     width: 75%;
+    margin-bottom: 2rem;
 }
 
 aside{
@@ -104,3 +105,35 @@ aside a{
     font-size: 1.3rem;
     margin-top: 2rem;
 }
+
+.listContainer, .imgContainer{
+    background-color: rgb(255, 190, 190);
+    border: solid 2px red;
+    margin-bottom: 1.5rem;
+}
+
+.listContainer h2, .imgContainer h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.listContainer ul li, .imgContainer ul li{
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.imgContainer img{
+    height: 512px;
+    border: black solid 1px;
+}
+
+.imgContainer ul li{
+    display: flex;
+    justify-content: center;
+}
+
