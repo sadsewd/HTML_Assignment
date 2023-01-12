@@ -16,11 +16,17 @@ img {
     max-width: 100%;
 }
 
+a{
+    cursor: pointer;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 3rem;
 }
 
 header{
+    width: 100%;
     background-color: rgb(255, 136, 136);
     display: flex;
 }
@@ -38,6 +44,7 @@ header{
 }
 
 .navbar{
+    width: 100%;
     background-color: rgb(255, 136, 136);
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -54,5 +61,23 @@ header{
 }
 
 .navbar a:hover{
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 136, 136);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+footer a{
+    padding: 1rem;
+}
+
+footer a:hover{
     color: white;
 }
