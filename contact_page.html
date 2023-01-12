@@ -12,25 +12,27 @@
     <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="about_page.html">About</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#contacts">Contact</a>
     </nav>
     <aside>
         <a href="https://www.reddit.com/r/dankmemes/">For the best memes visit this site!</a>
         <a href="https://www.w3schools.com">For the best online html info visit this site!</a>
         <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR">For the best git begginer tutorials visit this youtube playlist!</a>
     </aside>
-    <main>
+    <main id="contact">
         <h1>Contact</h1>
         <form>
             <label for="fname">First name</label>
-            <input type="text" name="fname" placeholder="Your first name" required>
+            <input class="textfield" type="text" name="fname" placeholder="Your first name" required>
             <label for="lname">Last name</label>
-            <input type="text" name="lname" placeholder=" Your last name" required>
+            <input class="textfield" type="text" name="lname" placeholder=" Your last name" required>
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Your email" required>
+            <input class="textfield" type="email" name="email" placeholder="Your email" required>
             <label for="msg">Message</label>
-            <input type="text" name="msg" placeholder="Your message" required>
-            <input type="submit" value="Submit">
+            <input class="textfield" type="text" name="msg" placeholder="Your message" required>
+            <div class="buttonContainer">
+                <input id="submit" type="submit" value="Submit">
+            </div>
         </form>
     </main>
     <footer>
