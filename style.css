@@ -1,48 +1,76 @@
+/*Imported Nunito font from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap');
 
+/*Css reset*/
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+/*added transition time so hover effects would look better*/
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all: unset;
     display: revert;
     transition: all .3s ease-out;
   }
 
-  *,
+/* Preferred box-sizing value */
+*,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
 }
 
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/*added back cursor point opon hovering mouse on links within <a> tag*/
 a{
     cursor: pointer;
 }
 
+/*applied imported font to body*/
 body{
     font-family: 'Nunito', sans-serif;
-    margin-bottom: 3rem;
 }
 
+/*applied header bg color, extented header to 100% and added display flex to arrange items within header in a single line*/
 header{
     width: 100%;
     background-color: rgb(255, 136, 136);
     display: flex;
 }
 
+/*resized logo and gave it a margin left for extra distance between the logo and the side of the site*/
 .logo{
     height: 128px;
     margin-left: 1rem;
 }
 
+/*added font size and margin so the text would neatly sit next to the middle of the logo, changed font weight so the text would stand out more*/
 .logoText{
  margin-top: 50px;
  font-size: 1.3rem;
  font-weight: bold;
- color: black;
 }
 
+/*used display flex and justify-content space around to evenly spread out the buttons, some visual stuff*/
 .navbar{
     display: flex;
     width: 100%;
@@ -54,6 +82,7 @@ header{
     justify-content: space-around;
 }
 
+/*used padding left and right to extend the pressable area of the link and used border radius to round out the edges of the buttons*/
 .navbar a{
     font-size: 1.5rem;
     margin-left: 2rem;
@@ -62,10 +91,12 @@ header{
     border-radius: .5rem;
 }
 
+/*used hover to give some feedback upon putting your mouse on the button*/
 .navbar a:hover{
     color: white;
 }
 
+/*used flex to center the items and used positon fixed to lock the footer on the screen to which i added bottom 0 to place it on the bottom of the screen as the footer should be*/
 footer{
     display: flex;
     justify-content: center;
@@ -84,12 +115,14 @@ a:hover{
     color: white;
 }
 
+/*used float right since i put aside on the left of the screen*/
 article{
     margin-top: 2rem;
     float: right;
     width: 75%;
     margin-bottom: 2rem;
 }
+
 
 aside{
     display: flex;
