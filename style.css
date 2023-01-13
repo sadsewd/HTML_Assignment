@@ -275,3 +275,33 @@ label{
     display: flex;
     justify-content: center;
 }
+
+
+/*fixed navbar buttons leeaving the screen when device screen height is smaller than 768px*/
+@media (max-height  : 768px){
+    .navbar a{
+        padding: .2rem 10rem;
+        margin-left: 0rem;
+    }
+    
+    .navbar #active{
+        padding: .2rem 10rem;
+        margin-left: 0rem;
+    }
+}
+/*added support for 4:3 screens*/
+@media (max-width: 1024px){
+    .navbar a{
+        padding: .2rem 7.5rem;
+        margin-left: 0rem;
+    }
+    
+    .navbar #active{
+        padding: .2rem 7.5rem;
+        margin-left: 0rem;
+    }
+
+    article{
+        width: 70%;
+    }
+}
