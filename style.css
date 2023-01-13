@@ -79,25 +79,22 @@ header{
     padding-top: 1rem;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
-    justify-content: space-around;
+    gap: 5vw;
+    justify-content: center;
 }
 
 /*used padding left and right to extend the pressable area of the link and used border radius to round out the edges of the buttons*/
 .navbar a{
     font-size: 1.5rem;
-    margin-left: 2rem;
-    padding: .2rem 12rem;
+    padding: .8rem 10vw;
     background-color: red;
-    border-radius: .5rem;
+    border-radius: 1rem;
 }
 
 /*styling for the active page button*/
 .navbar #active{
     font-size: 1.5rem;
-    margin-left: 2rem;
-    padding: .2rem 12rem;
     background-color: darkred;
-    border-radius: .5rem;
     color: white;
 }
 
@@ -274,34 +271,4 @@ label{
 .buttonContainer{
     display: flex;
     justify-content: center;
-}
-
-
-/*fixed navbar buttons leeaving the screen when device screen height is smaller than 768px*/
-@media (max-height  : 768px){
-    .navbar a{
-        padding: .2rem 10rem;
-        margin-left: 0rem;
-    }
-    
-    .navbar #active{
-        padding: .2rem 10rem;
-        margin-left: 0rem;
-    }
-}
-/*added support for 4:3 screens*/
-@media (max-width: 1024px){
-    .navbar a{
-        padding: .2rem 7.5rem;
-        margin-left: 0rem;
-    }
-    
-    .navbar #active{
-        padding: .2rem 7.5rem;
-        margin-left: 0rem;
-    }
-
-    article{
-        width: 70%;
-    }
 }
