@@ -128,7 +128,7 @@ a:hover{
 article{
     margin-top: 2vw;
     float: right;
-    width: 75vw;
+    width: 70vw;
     margin-bottom: 2vw;
 }
 
@@ -233,7 +233,7 @@ form{
 #contact{
     margin: 2vw 2vw 2vw 0vh;
     float: right;
-    width: 73vw;
+    width: 70vw;
     background-color: rgb(255, 190, 190);
     border: solid 2px red;
     display: flex;
